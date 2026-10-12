@@ -2,9 +2,9 @@
 
 # 外婆爱游戏 (Granny Loves Games)
 
-A lianliankan (连连看) tile matching game, released as a WeChat Mini Game. It is a personal project that I built between July and August 2026 by directing an AI coding tool, Claude Code.
+A lianliankan (连连看) tile matching game, released as a WeChat Mini Game. It is a personal project that I built between July and August 2026 by directing Claude Code.
 
-I first made it for my grandmother, which is where the name comes from. By August 2026, it was live on WeChat for anyone to play.
+I first made it for my grandmother, which is where the name comes from. The lianliankan app she played was full of ads that were easy to tap by mistake. Games like this on Chinese platforms are packed with ads, and one careless tap can start a download or even a payment. I made this version to fix that, so it has no ads at all. By August 2026, it was live on WeChat for anyone to play.
 
 <table>
   <tr>
@@ -34,12 +34,14 @@ The game has no ads and nothing to buy. All text in the game is in Chinese.
 Claude Code wrote all of the code. The game uses TypeScript and the Cocos Creator 3.8 game engine. My part was deciding what the game should be, making the calls along the way, testing it and releasing it.
 
 - A series of AI conversations wrote a detailed plan and broke the work into steps. Other conversations wrote most of the code from those steps. Each conversation ended with a handoff note, so the next one could carry on where it stopped.
-- I made the big decisions myself and left technical details and some design choices to the AI. For the look, the AI mocked up three visual styles and I picked one.
-- The AI wrote automated tests for the game logic and compared visual changes with the design mockup. I tested builds on my own phone and handled the WeChat registration and review myself.
+- I made the big decisions myself and left technical details and some design choices to the AI. For the look, the AI mocked up three visual styles and I picked one. I also asked for 重新排一下 (Reshuffle) to sit next to 提示 (Hint), so it takes one tap.
+- Getting the look right took several rounds. Three builds of the chosen style failed my checks on my phone. In the third, the two bottom buttons sat clearly right of centre, although the AI had reported them as fixed. I then tested whether a fresh AI conversation could spot the differences between a screenshot and the mockup. From then on, every visual check had two steps: a fresh conversation lists every difference it can see, and then each one is measured.
+- I set the rule that checks and tests count for more than the code itself. The AI wrote automated tests for the game logic, and I tested builds on my own phone. I also handled the WeChat registration and review myself.
+- After launch, I found the game couldn't be forwarded to friends in WeChat. I wanted anyone to be able to play it and pass it on, so version 0.1.6 turned sharing on, with a share card title I wrote: 没有广告，不费流量，完全免费的连连看 ('No ads, no data costs, completely free lianliankan').
 
 ## On WeChat
 
-On WeChat, the game is called **外婆爱游戏**.
+To play it, search for 外婆爱游戏 in WeChat.
 
 <img src="images/05_loading_screen.png" width="240" alt="The WeChat loading screen showing the game name 外婆爱游戏">
 
