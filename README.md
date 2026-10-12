@@ -1,3 +1,5 @@
+<p align="right"><a href="https://github.com/MoonMere/lianliankan-wechat-game/blob/main/README.zh-CN.md"><kbd>中文</kbd></a></p>
+
 # 外婆爱游戏 (Granny Loves Games)
 
 A lianliankan (连连看) tile matching game, released as a WeChat Mini Game. It is a personal project that I built between July and August 2026 by directing an AI coding tool, Claude Code.
